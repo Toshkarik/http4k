@@ -49,6 +49,6 @@ fun String.base64DecodedByteBuffer() = base64DecodedArray().asByteBuffer()
 
 fun String.base64Encode() = toByteArray().base64Encode()
 
-fun String.urlEncoded(): String = URLEncoder.encode(this, Charsets.UTF_8)
+fun String.urlEncoded(): String = URLEncoder.encode(this, "UTF-8")
 
-fun String.urlDecoded(): String = URLDecoder.decode(this, Charsets.UTF_8)
+fun String.urlDecoded(): String = URLDecoder.decode(this, "UTF-8")
